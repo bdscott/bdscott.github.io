@@ -4,72 +4,42 @@ body {
 }
 
 header {
-	margin: 80px 0 50px 80px;
+	margin: 0;
 }
 
 header h1	{
-	font-family: 'Lora', serif;
+	font-family: 'Permanent Marker', serif;
 	font-size: 5rem;
 	display: inline-block;
 	color: #E33977;
+	margin: 1rem;
+	padding: 0;
+}
+
+section#photos {
+	width: 100%;
+	padding: 0;
 	margin: 0;
-	background: #d9446a;
-    background: -moz-linear-gradient(-45deg, #d9446a 0%, #8c3361 16%, #a75736 32%, #d46830 50%, #0fafcd 71%, #65c587 86%, #94c661 100%);
-    background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, #d9446a), color-stop(16%, #8c3361), color-stop(32%, #a75736), color-stop(50%, #d46830), color-stop(71%, #0fafcd), color-stop(86%, #65c587), color-stop(100%, #94c661));
-    background: -webkit-linear-gradient(-45deg, #d9446a 0%, #8c3361 16%, #a75736 32%, #d46830 50%, #0fafcd 71%, #65c587 86%, #94c661 100%);
-    background: -o-linear-gradient(-45deg, #d9446a 0%, #8c3361 16%, #a75736 32%, #d46830 50%, #0fafcd 71%, #65c587 86%, #94c661 100%);
-    background: -ms-linear-gradient(-45deg, #d9446a 0%, #8c3361 16%, #a75736 32%, #d46830 50%, #0fafcd 71%, #65c587 86%, #94c661 100%);
-    background: linear-gradient(135deg, #d9446a 0%, #8c3361 16%, #a75736 32%, #d46830 50%, #0fafcd 71%, #65c587 86%, #94c661 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#d9446a', endColorstr='#94c661',GradientType=1 );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
 }
 
-header h1 span {
-	color: #ccb53a;
-}
-
-header nav {
-	float: right;
-	margin-right: 30px;
-}
-
-header nav ul {
-	list-style: none;
-}
-
-header nav ul li a {
-	text-decoration: none;
-	color: #17b5ba;
-	border: 1px solid #17b5ba;
-	padding: 10px 20px;
-	border-radius: 30px;
-}
-
-section.quote {
-	display: none;
-}
-
-section.quote p {
-	font-size: 2rem;
-	font-style: italic;
-}
-
-section.project {
-	width: 900px;
-	margin-left: 70px;
-}
-
-section.project article {
-	margin-bottom: 100px;
-}
-
-section.project article p {
-	padding: 10px;
-	font-size: 1.2rem;
-}
-
-section.project img {
-	width: 30%;
+section#photos img {
 	margin: 5px;
+	height: 500px;
+}
+
+@media (max-width: 600px) {
+	header h1 {
+		font-size: 3rem;
+	}
+
+	section#photos img {
+		width: 100%;
+		height: auto;
+	}
+}
+
+footer {
+	color: #666666;
+	margin-left: 5px;
+	font-size: 12px;
 }
